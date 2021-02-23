@@ -13,43 +13,51 @@ body{
     background-color:aliceblue; 
 }
 
-
-.blobs {
-    position: absolute;
-    width: 350px;
-    height: 400px;
-    left: 870px;
-    top: 460px;
-    z-index: -5;
+.blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: #D9AE94;
+    fill-opacity: 0.3;
+  width: 30vmax;
+  z-index: -5;
+  animation: move 30s ease-in-out infinite;
+  transform-origin: 50% 50%;
 }
 
-.blobs1 {
-    position: absolute;
-    width: 750px;
-    height: 600px;
-    left: -220px;
-    top: 100px;
-    z-index: -5;
-}
-.blobs2 {
-    position: absolute;
-    width: 700px;
-    height: 300px;
-    left: 500px;
-    top: -200px;
-    z-index: -5;
 
+@keyframes move {
+  0%   { transform: scale(1)   translate(10px, -30px); }
+  38%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  40%  { transform: scale(0.8, 1) translate(80vw, 30vh) rotate(160deg); }
+  78%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  80%  { transform: scale(1.3) translate(0vw, 50vh) rotate(-20deg); }
+  100% { transform: scale(1)   translate(10px, -30px); }
 }
 
-.blobs3 {
-    position: absolute;
-    width: 600px;
-    height: 400px;
-    left: -100px;
-    top: 1100px;
-    z-index: -5;
-
+html, body {
+  width: 100%;
+  height:100%;
 }
+
+body {
+    background: linear-gradient(-45deg, #fffdfa, #fffbf9, #F2FCF6, #f9f9f9);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -71,6 +79,7 @@ a{
     box-sizing : border-box;
     background-color: white;
     position: relative;
+
 }
 
 .header {
@@ -198,7 +207,7 @@ nav{
     overflow:hidden;
     border-radius: 0.7rem;
     box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(0,0,0,0.1);
-    position: relative;
+        position: relative;
 }
 
 .text-overlay{
