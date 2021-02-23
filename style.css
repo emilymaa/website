@@ -656,4 +656,16 @@ padding: 0 4px;
      .blobs3{
         display: none;
     }
+    .campaigns{
+    flex-direction: column;    
+    }
+    .container{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+    .header{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
 }
+    
