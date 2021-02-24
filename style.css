@@ -616,8 +616,19 @@ padding: 0 4px;
     .p-b-container{
         width:100%;
     }
+    
 }
 
+@media(max-width:950px){
+
+.hero-img{
+        display: 40%;
+        margin-top:2rem;
+    }
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
 @media(max-width:1050px){
     .container{
         padding-right: 2rem;
@@ -652,14 +663,6 @@ padding: 0 4px;
 
 
 @media(max-width:900px){
-    .hero-img{
-        display: 40%;
-        margin-top:2rem;
-    }
-    .hero {
-        display: flex;
-        flex-direction: column;
-    }
     .work-heading{
         margin: 0 0 0 0;
     }
