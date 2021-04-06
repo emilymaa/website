@@ -11,6 +11,11 @@ body{
 }
 .highlight{
     background-color:aliceblue; 
+    
+}
+
+.highlight1{
+    background-color: #E3EDD1; 
 }
 
 .blob {
@@ -205,9 +210,9 @@ nav{
 .p-box{
     background-color:rgba(0,0,0,0.1) ;
     overflow:hidden;
-    border-radius: 0.7rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.2rem rgba(0,0,0,0.1);
-        position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0.001rem 0.1rem 0.55rem 0.1rem rgba(0,0,0,0.05);
+    position: relative;
 }
 
 .text-overlay{
@@ -298,7 +303,7 @@ nav{
     font-family: 'PoppinsBold', sans-serif;
     letter-spacing: 1px;
     color: #D08C60;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .description{
@@ -361,7 +366,7 @@ nav{
     align-items: top;
     flex-grow: 1;
     justify-content: space-between;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .campaigns-text{
@@ -378,6 +383,43 @@ nav{
     justify-content:flex-end;
     flex: 0.1;
 }
+
+.personas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.personas-1{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    flex-grow: 1;
+    padding-right: 5rem;
+}
+
+.personas-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 1.5rem;
+}
+
+.personas-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 1.5rem;
+    border-left: 0.3rem solid;
+    border-left-color: #A3B18A;
+    padding: 0rem 0rem 0.5rem 1rem;
+}
+
 .center{
   margin-left: auto;
   margin-right: auto;
@@ -477,18 +519,19 @@ nav{
 
 .ht6 h2{
     font-family: 'Poppins', sans-serif;
-    color: black;
+    color: darkslategray;
     font-size: 29px;
     margin: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
 
 }
 
 .ht6 h3{
     font-family: 'Poppins', sans-serif;
-    color: darkslategray;
+    color: #DAC1B1;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    font-size: 15px;
 
 }
 
@@ -499,6 +542,21 @@ nav{
     margin-top: 1rem;
 
 }
+
+.ht6 h5{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #A3B18A;
+    margin: 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    text-align: center;
+
+}
+
+
 
 .ht6 p{
     font-family: 'Poppins', sans-serif;
@@ -512,12 +570,14 @@ nav{
     margin: 0;
 }
 
+
 .ht6 li{
     font-family: 'Poppins', sans-serif;
     color: grey;
     margin-top: 0.5rem;
 
 }
+
 
 .video{
     display: flex;
@@ -586,6 +646,13 @@ padding: 0 4px;
         width: 100%;
         height: auto;
     }
+
+.background-highlight{
+    background-color: #F1F1F1;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+
 
 @media screen and (max-width: 800px) {
   .column {
