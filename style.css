@@ -868,7 +868,7 @@ html{
 }
 
 
-@media(max-width:500px){
+@media(max-width:570px){
     
 .sidenav {
     display: flex;
@@ -924,6 +924,20 @@ html{
     margin-left: 10%;
             margin-right: 10%;
     margin-top: 150px;
+}
+    .about h1{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 50px;
+    margin: 0px;
+    letter-spacing: 1px;
+    color: black;
+}
+    
+    .about p{
+    font-size: 18px;
+    margin: 0px;
+    letter-spacing: 1px;
+    color: black;
 }
 
 }
