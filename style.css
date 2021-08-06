@@ -435,6 +435,7 @@ html{
 .team{
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
 }
 .main-text{
     display: flex;
@@ -863,12 +864,17 @@ html{
 }
 
 
-
+    .team{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+}
 
 }
 
 
 @media(max-width:570px){
+ 
     
 .sidenav {
     display: flex;
@@ -939,6 +945,7 @@ html{
     letter-spacing: 1px;
     color: black;
 }
+
 
 }
     
